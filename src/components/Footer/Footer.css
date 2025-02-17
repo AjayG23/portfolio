@@ -1,0 +1,43 @@
+.socials-container{
+    padding-top: 70px;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.socials a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #A27B5C;
+    transition: transform 0.3s ease-in-out;
+}
+.socials a:hover{
+    transform: scale(1.1);
+}
+.arrow-up{
+    padding-top: 50px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.arrow-up:hover{
+    transform: scale(1.1);
+    cursor: zoom-in;
+}
+.copyright{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.copyright h5{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100;
+    color: white;
+}
+@media (max-width: 600px) {
+    .socials {
+        flex-direction: column; 
+        gap: 15px; 
+    }
+}

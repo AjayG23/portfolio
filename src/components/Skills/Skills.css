@@ -1,0 +1,36 @@
+.skill-header{
+    padding: 100px;
+    text-align: center;
+}
+.skill-header h3{
+    color: white;
+    font-size: 80px;
+    font-weight: 100;
+}
+.prog-lang-header{
+    font-size: 50px;
+    font-weight: 100;
+    color: #A27B5C;
+}
+.prog-langs{
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+}
+.cards{
+    padding: 6px 50px;
+    margin : 30px 30px 30px 5px;
+    background-color: #414a4c;
+    border-radius: 3px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.cards h5{
+    font-size: 25px;
+    font-weight: 100;
+    color: beige;
+    background-color: #414a4c
+}
+.cards:hover{
+    transform: scale(1.1);
+}

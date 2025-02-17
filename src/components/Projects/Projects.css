@@ -1,0 +1,71 @@
+.projects-container{
+    padding-top: 100px;
+}
+.projects-header{
+    text-align: center;
+}
+.projects-header h3{
+    color: white;
+    font-size: 80px;
+    font-weight: 100;
+}
+.project-1 {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Spacing between image and text */
+    justify-content: flex-start;
+    text-align: justify; /* Align text properly */
+}
+
+/* Image Styling */
+.sneaky-image img {
+    width: 100%; /* Default size */
+    height: auto;
+    border-radius: 5px;
+    border: 4px solid #A27B5C;
+    box-shadow: 1px 1px 30px #A27B5C;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.sneaky-image img:hover {
+    transform: scale(0.9);
+}
+
+/* Description Styling */
+.sneaky-desc {
+    max-width: 500px; /* Ensures text doesn’t stretch */
+    font-size: 25px;
+    font-weight: 100;
+    color: white
+}
+.sneaky-desc h3{
+    font-size: 50px;
+    font-weight: 100;
+}
+.sneaky-desc button{
+    color: white;
+    font-weight: 100;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.sneaky-desc button:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 1px #A27B5C;
+}
+.tech-stack{
+    color: #A27B5C;
+}
+
+/* 📱 Responsive: Stack Image & Description on Smaller Screens */
+@media (max-width: 768px) {
+    .project-1 {
+        flex-direction: column; /* Stack image and text */
+        text-align: center;
+    }
+
+    .sneaky-image img {
+        width: 100%; /* Reduce size */
+    }
+}

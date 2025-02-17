@@ -1,0 +1,43 @@
+.wantto-container{
+    padding-top: 100px;
+}
+.wantto-header{
+    text-align: center;
+    padding-bottom: 100px;
+}
+.wantto-header h3{
+    color: white;
+    font-size: 80px;
+    font-weight: 100;
+}
+.desc{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+.job h3{
+    color: #A27B5C;
+    font-size: 35px;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+.job p{
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 1.1;
+}
+@media (max-width: 768px) {
+    .desc {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+    }
+
+    .job {
+        max-width: 90%; /* Make it take full width */
+        
+    }
+
+    
+}

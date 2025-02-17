@@ -1,0 +1,24 @@
+.about-title{
+    text-align: center;
+    color: white;  
+    padding-bottom: 100px;
+}
+.about-title h3{
+    font-size: 80px;
+    font-weight: 100;
+}
+.past{
+    text-align: center;
+}
+.about-me-h5{
+    color: #A27B5C;
+    font-size: 35px;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+.about-me-p{
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 1.1;
+}

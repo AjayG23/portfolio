@@ -1,0 +1,18 @@
+.svg-container{
+    padding: 90px;
+    text-align: center;
+}
+.mouse{
+    height:35px;
+    width: 35px;
+    color: #A27B5C;
+    
+}
+.mouse:hover{
+    box-shadow: 1px 1px 90px gray;
+}
+.arrow{
+    height:25px;
+    width: 2ch;
+    color: wheat;
+}
