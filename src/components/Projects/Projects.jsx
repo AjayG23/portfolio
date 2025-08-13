@@ -21,7 +21,7 @@ function Projects() {
                 </div>
                 <div className="sneaky-desc">
                     <h3>FixEasy</h3>
-                    <p>(Ongoing Project)</p>
+                    <p>(Planning Phase)</p>
                     <p>Made With: <span className='tech-stack'>NodeJS, ExpressJS, MongoDB, ReactJS</span></p>
                     <p>FixEasy is a three-tier service platform connecting users with skilled technicians like electricians, plumbers, and mechanics. It offers seamless booking, real-time availability, and admin monitoring for efficient service management.🚀👟</p>
                     {/* <button>GitHub Repo ↗</button> */}

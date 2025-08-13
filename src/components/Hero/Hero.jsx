@@ -15,16 +15,16 @@ function Hero() {
                             <h5>Ajay G</h5>
                         </div>
                         <div className="line-3">
-                            <h5>Web Developer • Student</h5>
+                            <h5>Web Developer</h5>
                         </div>
                         <div className="line-4">
-                            <p>I'm a passionate Web Developer based on Kerala, India, currently pursuing Master's in Computer Applications.
-                                Alongside my studies, I have done certifications on Web Development, Cloud Computing, Data Analytics and others.
-                                I'm currently looking for opportunities in Tech Field to showcase my skills.
+                            <p>I’m a passionate Web Developer based in Kerala, India, with a Master’s degree in Computer Applications.
+                                Alongside my studies, I have earned certifications in Web Development, Cloud Computing, Data Analytics, and other domains.
+                                I’m now actively seeking opportunities in the tech field to apply my skills, contribute to impactful projects, and continue growing as a developer
                             </p>
                         </div>
                         <div className="line-5">
-                        <a href="https://drive.google.com/file/d/1fr-v4p5GqFddH48WgW53ypV4ey1jEops/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                        <a href="https://drive.google.com/file/d/1H6SRJMCg_BZqMVD1H9guDobFebcudhxM/view" target="_blank" rel="noopener noreferrer">
                             <button className="resume-button">Get Resume</button>
                         </a>
                         </div>
