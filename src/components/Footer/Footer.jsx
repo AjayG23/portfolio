@@ -13,7 +13,7 @@ function Footer() {
                     <a href="mailto:ajay.govarthanan@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
                     <a href="https://github.com/AjayG23" target="_blank" rel="noopener noreferrer">GitHub</a>
                     <a href="https://www.linkedin.com/in/ajay-g23/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <a href="https://drive.google.com/file/d/1H6SRJMCg_BZqMVD1H9guDobFebcudhxM/view"target="_blank" rel="noopener noreferrer">Resume</a>
+                    <a href="https://drive.google.com/file/d/1TRp_CfFI9cOgclrKUM2omf1TJNv5AD3d/view?usp=sharing"target="_blank" rel="noopener noreferrer">Resume</a>
             </div>
             <div className="arrow-up">
                 <FontAwesomeIcon icon={faAnglesUp} className='arrow' onClick={() => scrollToSection('navbar')}/>

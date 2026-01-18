@@ -14,12 +14,12 @@ function About() {
                 </div>
                 <div className="col-lg-4 past">
                     <h5 className='about-me-h5'>Present</h5>
-                    <p className='about-me-p'>I am currently pursuing my Master’s in Computer Applications while actively honing my programming skills. I have a strong preference for backend development over frontend and enjoy working on server-side logic and architecture. Now, I am seeking a developer position where I can apply my skills, contribute to impactful projects, and continue growing as a software developer.
+                    <p className='about-me-p'>Software Engineer with a focus on full-stack development and architectural ownership. Experienced in building high-performance interactive engines using the MERN stack, TypeScript, and Redux. Proven ability to drive technical roadmaps and deliver enterprise-grade, type-safe solutions with high autonomy.
                     </p>
                 </div>
                 <div className="col-lg-4 past">
                     <h5 className='about-me-h5'>Future</h5>
-                    <p className='about-me-p'>In the future, I aim to strengthen my backend development skills by working on scalable and efficient systems. I have recently started solving problems on LeetCode to improve my problem-solving and algorithmic thinking. My goal is to secure a developer role where I can contribute to innovative projects, stay updated with emerging technologies, and continuously grow in my field.
+                    <p className='about-me-p'>In the future, I aim to strengthen my engineering skills by working on scalable and efficient systems and gathering experiences. I have recently started solving problems on LeetCode to improve my problem-solving and algorithmic thinking. My goal is to be an efficient engineer role where I can contribute to innovative projects, stay updated with emerging technologies, and continuously grow in my field.
                     </p>
                 </div>
             </div>

@@ -18,13 +18,11 @@ function Hero() {
                             <h5>Web Developer</h5>
                         </div>
                         <div className="line-4">
-                            <p>I’m a passionate Web Developer based in Kerala, India, with a Master’s degree in Computer Applications.
-                                Alongside my studies, I have earned certifications in Web Development, Cloud Computing, Data Analytics, and other domains.
-                                I’m now actively seeking opportunities in the tech field to apply my skills, contribute to impactful projects, and continue growing as a developer
+                            <p>Software Engineer Intern with full-stack expertise, skilled in React, TypeScript, Redux, and REST APIs on the frontend, Node.js/Express on the backend and Git for version control. Experienced with databases such as MongoDB and SQL, delivering clean and scalable end-to-end solutions.
                             </p>
                         </div>
                         <div className="line-5">
-                        <a href="https://drive.google.com/file/d/1H6SRJMCg_BZqMVD1H9guDobFebcudhxM/view" target="_blank" rel="noopener noreferrer">
+                        <a href="https://drive.google.com/file/d/1TRp_CfFI9cOgclrKUM2omf1TJNv5AD3d/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                             <button className="resume-button">Get Resume</button>
                         </a>
                         </div>

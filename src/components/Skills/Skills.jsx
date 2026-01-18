@@ -12,7 +12,7 @@ function Skills() {
                 <h3 className='prog-lang-header'>Programming Languages</h3>
                 <div className="prog-langs">
                     <div className="cards">
-                        <h5>JavaScript</h5>
+                        <h5>TypeScript</h5>
                     </div>
                     <div className="cards">
                         <h5>Java</h5>
@@ -39,6 +39,12 @@ function Skills() {
                     </div>
                     <div className="cards">
                         <h5>Bootstrap</h5>
+                    </div>
+                    <div className="cards">
+                        <h5>Tailwind CSS</h5>
+                    </div>
+                    <div className="cards">
+                        <h5>Redux</h5>
                     </div>
                 </div>
             </div>
