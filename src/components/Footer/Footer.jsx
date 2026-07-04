@@ -1,27 +1,49 @@
 import './Footer.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAnglesUp } from "@fortawesome/free-solid-svg-icons";
+import { GITHUB_URL, LINKEDIN_URL, EMAIL, RESUME_URL } from '../../constants'
 
-const scrollToSection = (id) => {
-    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-};
-
-function Footer() {
-    return(
-        <div className="container socials-container" id='contact'>
-            <div className="socials">
-                    <a href="mailto:ajay.govarthanan@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
-                    <a href="https://github.com/AjayG23" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a href="https://www.linkedin.com/in/ajay-g23/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <a href="https://drive.google.com/file/d/1TRp_CfFI9cOgclrKUM2omf1TJNv5AD3d/view?usp=sharing"target="_blank" rel="noopener noreferrer">Resume</a>
-            </div>
-            <div className="arrow-up">
-                <FontAwesomeIcon icon={faAnglesUp} className='arrow' onClick={() => scrollToSection('navbar')}/>
-            </div>
-            <div className="copyright">
-                <h5>© 2025 Ajay G. All Rights Reserved</h5>
-            </div>
-        </div>
-    )
+function SiteFooter() {
+  return (
+    <footer id="site-footer">
+      <div className="footer-socials">
+        <a
+          href={GITHUB_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          id="footer-github"
+        >
+          GitHub
+        </a>
+        <span className="footer-sep">·</span>
+        <a
+          href={LINKEDIN_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          id="footer-linkedin"
+        >
+          LinkedIn
+        </a>
+        <span className="footer-sep">·</span>
+        <a
+          href={`mailto:${EMAIL}`}
+          id="footer-email"
+        >
+          E-mail
+        </a>
+        <span className="footer-sep">·</span>
+        <a
+          href={RESUME_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          id="footer-resume"
+        >
+          Resume
+        </a>
+      </div>
+      <div className="footer-copy">
+        (c) 2025–{new Date().getFullYear()} Ajay G. All Rights Reserved.
+      </div>
+    </footer>
+  )
 }
-export default Footer
+
+export default SiteFooter

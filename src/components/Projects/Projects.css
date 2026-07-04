@@ -1,71 +1,69 @@
-.projects-container{
-    padding-top: 100px;
-}
-.projects-header{
-    text-align: center;
-}
-.projects-header h3{
-    color: white;
-    font-size: 80px;
-    font-weight: 100;
-}
-.project-1 {
-    padding-top: 100px;
-    display: flex;
-    align-items: center;
-    gap: 30px; /* Spacing between image and text */
-    justify-content: flex-start;
-    text-align: justify; /* Align text properly */
+/* Projects box styles */
+
+.project-layout {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
 }
 
-/* Image Styling */
-.sneaky-image img {
-    width: 100%; /* Default size */
+.project-img-wrap {
+  flex-shrink: 0;
+}
+
+.project-img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 0 12px rgba(0,0,0,0.5);
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  filter: saturate(0.8);
+}
+
+.project-img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 20px rgba(160, 120, 80, 0.4);
+  filter: saturate(1);
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-name {
+  font-family: var(--font-pixel);
+  font-size: 18px;
+  color: var(--moon);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 2px;
+}
+
+a.project-name:hover {
+  color: var(--link-hover);
+  text-decoration: none;
+}
+
+.project-status {
+  font-size: 11px;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.project-stack {
+  font-size: 11px;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+@media (max-width: 480px) {
+  .project-layout {
+    flex-direction: column;
+  }
+  .project-img {
+    width: 100%;
     height: auto;
-    border-radius: 5px;
-    border: 4px solid #A27B5C;
-    box-shadow: 1px 1px 30px #A27B5C;
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Hover Effect */
-.sneaky-image img:hover {
-    transform: scale(0.9);
-}
-
-/* Description Styling */
-.sneaky-desc {
-    max-width: 500px; /* Ensures text doesn’t stretch */
-    font-size: 25px;
-    font-weight: 100;
-    color: white
-}
-.sneaky-desc h3{
-    font-size: 50px;
-    font-weight: 100;
-}
-.sneaky-desc button{
-    color: white;
-    font-weight: 100;
-    padding: 10px;
-    transition: transform 0.3s ease-in-out;
-}
-.sneaky-desc button:hover{
-    transform: scale(1.1);
-    box-shadow: 2px 2px 1px #A27B5C;
-}
-.tech-stack{
-    color: #A27B5C;
-}
-
-/* 📱 Responsive: Stack Image & Description on Smaller Screens */
-@media (max-width: 768px) {
-    .project-1 {
-        flex-direction: column; /* Stack image and text */
-        text-align: center;
-    }
-
-    .sneaky-image img {
-        width: 100%; /* Reduce size */
-    }
+  }
 }

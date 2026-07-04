@@ -1,56 +1,104 @@
 import './Projects.css'
+import FixeasyImg from '../../assets/fixeasy.png'
 import SneakyImg from '../../assets/sneaky.png'
 import MercadoImg from '../../assets/mercado.png'
-import FixeasyImg from '../../assets/fixeasy.png'
 
-function redirectToMercado(){
-    window.open('https://github.com/AjayG23/MERCADO',"_blank")
-}
-function redirectToSneaky(){
-    window.open('https://github.com/AjayG23/sneaky',"_blank")
-}
-function Projects() {
-    return(
-        <div className="container projects-container" id="projects">
-            <div className="projects-header"id="projects">
-                <h3>Projects</h3>
-            </div>
-            <div className="project-1">
-                <div className="sneaky-image">
-                    <img src={FixeasyImg} alt="" />
-                </div>
-                <div className="sneaky-desc">
-                    <h3>FixEasy</h3>
-                    <p>(Planning Phase)</p>
-                    <p>Made With: <span className='tech-stack'>NodeJS, ExpressJS, MongoDB, ReactJS</span></p>
-                    <p>FixEasy is a three-tier service platform connecting users with skilled technicians like electricians, plumbers, and mechanics. It offers seamless booking, real-time availability, and admin monitoring for efficient service management.🚀👟</p>
-                    {/* <button>GitHub Repo ↗</button> */}
-                </div>
-            </div>
-            <div className="project-1">
-                <div className="sneaky-image">
-                    <img src={SneakyImg} alt="" />
-                </div>
-                <div className="sneaky-desc">
-                    <h3>Sneaky</h3>
-                    <p>Made With: <span className='tech-stack'>NodeJS, ExpressJS, MongoDB, EJS, CSS, Bootstrap, AJAX</span></p>
-                    <p>Sneaky is a feature-rich e-commerce platform designed for sneaker enthusiasts, offering a seamless shopping experience. The website allows users to browse a wide range of sneakers, add products to their cart, and complete purchases effortlessly. 🚀👟</p>
-                    <button onClick={redirectToSneaky}>GitHub Repo ↗</button>
-                </div>
-            </div>
-            <div className="project-1">
-                <div className="sneaky-image">
-                    <img src={MercadoImg} alt="" />
-                </div>
-                <div className="sneaky-desc">
-                    <h3>Mercado</h3>
-                    <p>Made With: <span className='tech-stack'>HTML, CSS, Bootstrap, Ajax, Php, MySQL</span></p>
-                    <p>Mercado is a feature-rich e-commerce platform desinged for selling kudumbasree products. Kudumbasree is a poverty eradication scheme developed by Kerala Government for womens. 🚀👟</p>
-                    <button onClick={redirectToMercado}>GitHub Repo ↗</button>
-                </div>
-            </div>
-            
+const projects = [
+  {
+    name: 'FixEasy',
+    href: null,
+    img: FixeasyImg,
+    stack: 'Node.js · Express.js · MongoDB · React.js',
+    desc: 'A three-tier service platform connecting users with skilled technicians (electricians, plumbers, mechanics). Features seamless booking, real-time availability, and admin monitoring for efficient service management.',
+    status: 'Planning Phase',
+  },
+  {
+    name: 'Sneaky',
+    href: 'https://github.com/AjayG23/sneaky',
+    img: SneakyImg,
+    stack: 'Node.js · Express.js · MongoDB · EJS · Bootstrap · AJAX',
+    desc: 'A feature-rich e-commerce platform designed for sneaker enthusiasts — browse a wide range of sneakers, add to cart, and complete purchases seamlessly.',
+  },
+  {
+    name: 'Mercado',
+    href: 'https://github.com/AjayG23/MERCADO',
+    img: MercadoImg,
+    stack: 'HTML · CSS · Bootstrap · AJAX · PHP · MySQL',
+    desc: "An e-commerce platform for selling Kudumbasree products — a poverty eradication scheme by the Kerala Government supporting women's entrepreneurship.",
+  },
+]
+
+function ProjectsBox() {
+  return (
+    <section id="projects">
+      <div className="box">
+        <div className="box-title">
+          <span className="moon-icon">☾</span>
+          Projects
         </div>
-    )
+
+        {projects.map(({ name, href, img, stack, desc, status }) => (
+          <div key={name} className="project-entry">
+            <div className="project-layout">
+              <div className="project-img-wrap">
+                <img
+                  src={img}
+                  alt={name}
+                  className="project-img"
+                />
+              </div>
+              <div className="project-info">
+                {href ? (
+                  <a
+                    className="project-name"
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    id={`project-${name.toLowerCase()}`}
+                  >
+                    ☾ {name}
+                  </a>
+                ) : (
+                  <div className="project-name">☾ {name}</div>
+                )}
+
+                {status && (
+                  <span className="project-status">[{status}]</span>
+                )}
+
+                <div className="project-stack">Made with: {stack}</div>
+                <p style={{ fontSize: 12.5, margin: 0 }}>{desc}</p>
+
+                {href && (
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="retro-btn"
+                    style={{ marginTop: 8, display: 'inline-block' }}
+                    id={`project-${name.toLowerCase()}-link`}
+                  >
+                    [ GitHub Repo ]
+                  </a>
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
+
+        {/* Other small projects */}
+        <div style={{ marginTop: 6 }}>
+          <b style={{ color: 'var(--text-bright)', fontSize: 13 }}>✧ Also worth checking out:</b>
+          <div style={{ marginTop: 6, fontSize: 12.5, lineHeight: 2 }}>
+            <span className="blog-arrow">✩</span>{' '}
+            <a href="https://github.com/AjayG23" target="_blank" rel="noopener noreferrer">
+              More on GitHub →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
 }
-export default Projects
+
+export default ProjectsBox
